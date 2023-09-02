@@ -1,0 +1,25 @@
+.pie_info {
+  .pie_item {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    padding: 5px 16px;
+    gap: 20px;
+    margin-bottom: 8px;
+
+    .pie_color {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .pie_name {
+      width: 180px;
+      color: #98a2b3;
+      font-size: 12px;
+    }
+    .pie_value {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

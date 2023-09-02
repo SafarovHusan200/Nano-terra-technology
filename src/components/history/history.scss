@@ -1,0 +1,17 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  .history_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .history_name {
+      font-weight: 600;
+    }
+  }
+
+  .history_table {
+    height: 100%;
+  }
+}

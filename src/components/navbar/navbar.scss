@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  height: 56px;
+  border-radius: 8px;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar_roll {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      color: $secondary;
+    }
+  }
+
+  .navbar_info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .navbar_search {
+      position: relative;
+
+      input {
+        width: 200px;
+        height: 35px;
+        padding: 8px 16px;
+        border: 1px solid $secondary;
+        border-radius: 12px;
+        padding-left: 28px;
+      }
+      img {
+        position: absolute;
+        top: 11px;
+        left: 10px;
+      }
+    }
+
+    .navbar_user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.balance {
+  display: flex;
+  flex-direction: column;
+
+  .blance_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .blance_name {
+      font-weight: 600;
+    }
+
+    .balance_set {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      cursor: pointer;
+
+      div {
+        width: 7px;
+        height: 7px;
+        border: 2px solid black;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .balance_price {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 25px;
+    h1 {
+      font-weight: 700;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      color: #d0d5dd;
+    }
+  }
+
+  .balance_data {
+    font-size: 12px;
+    font-weight: 600;
+    color: #d0d5dd;
+    margin-top: 12px;
+  }
+
+  .balance_btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    button {
+      width: 134px;
+      height: 55px;
+      border-radius: 10px;
+      border: none;
+      background: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-weight: 600;
+
+      &:first-child {
+        color: white;
+        background-color: #4623e9;
+      }
+      &:last-child {
+        border: 2px solid #4623e9;
+      }
+    }
+  }
+}

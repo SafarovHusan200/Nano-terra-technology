@@ -1,0 +1,67 @@
+@import "../../styles/responsive.scss";
+@import "../../styles/global.scss";
+@import "../../styles/variables.scss";
+
+.menu {
+  width: 280px;
+  height: 100vh;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 42px;
+      height: 42px;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+
+  .menu_main {
+    height: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h5 {
+      color: $secondary;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 16px;
+    }
+    .menu_list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .document {
+        background-color: #f7f5fd;
+        color: $primary;
+      }
+      .menu_list_item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 16px;
+        cursor: pointer;
+        border-radius: 8px;
+
+        &:hover {
+          background-color: #f7f5fd;
+        }
+      }
+      .active {
+        color: $primary;
+        background-color: #f7f5fd;
+      }
+    }
+  }
+}
